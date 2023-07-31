@@ -449,7 +449,7 @@ nav .fly-item {
     font-size: 0.9em;
     font-weight: var(--fw3);
 }
-.search span, button {
+.search span {
     position: absolute;
     top: 0;
     padding: 0.55em 1.5em;
@@ -457,23 +457,24 @@ nav .fly-item {
     color: var(--light-text-color);
     height: var(--percent100);
 }
-.right .search button {
-    right: 0;
-    border: 0;
-    outline: 0;
-    font-size: 0.875em;
-    font-weight: var(--fw6);
-    background-color: var(--primary-color);
-    border-radius: 0 7px 7px 0;
-    transition: var(--trans-background);
-    /* height: 2.8rem; */
-}
 
-.right .search button:hover{
+
+.right .search-btn:hover{
     background-color: var(--dark-color);
 }
 
-
+.right .search-btn{
+    position: absolute;
+    right: 0;
+    border: 0;
+    padding: 1.12em;
+    font-size: 0.875em;
+    font-weight: var(--fw6);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 0 7px 7px 0;
+    transition: var(--trans-background);
+}
 
 
 
