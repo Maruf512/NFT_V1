@@ -155,7 +155,7 @@ h4 {
 }
 .icon-small {
     font-size: 1.25em;
-    margin: auto;
+    margin-left: auto;
 }
 .icon-large {
     font-size: 1.75em;
@@ -431,6 +431,12 @@ nav .fly-item {
     width: 60px;
 }
 
+.dpt-menu > ul > li > a {
+    font-size: var(--font-small);
+    height: 46px;
+    align-items: center;
+}
+
 /* ----------------------------- d. Search Form ---------------------------- */
 .header-main .right {
     flex: 1;
@@ -458,11 +464,6 @@ nav .fly-item {
     height: var(--percent100);
 }
 
-
-.right .search-btn:hover{
-    background-color: var(--dark-color);
-}
-
 .right .search-btn{
     position: absolute;
     right: 0;
@@ -475,6 +476,10 @@ nav .fly-item {
     border-radius: 0 7px 7px 0;
     transition: var(--trans-background);
 }
+.right .search-btn:hover{
+    background-color: var(--dark-color);
+}
+
 
 
 
@@ -631,6 +636,22 @@ nav .fly-item {
     .header-main .right {
         max-width: 600px;
         margin-left: auto;
+    }
+
+    /* Departments menu */
+    .dpt-menu {
+        position: absolute;
+        top: var(--percent100);
+        width: 300px;
+        background-color: var(--white-color);
+        border: 1px solid var(--border-color);
+        border-top: 0;
+        border-bottom: 0;
+    }
+    .dpt-menu > ul > li > a {
+        font-weight: var(--fw5);
+        padding: 0 1.5em;
+        border-bottom: 1px solid var(--border-color);
     }
 
 
